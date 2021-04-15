@@ -254,7 +254,21 @@ console.log(result9);
 // FizzBuzz
 // etc.
 
+function fizzBuzz() {
 
+    for(let i = 0; i < 100; i++){
+        let output = '';
+
+        if (i % 3 === 0) {
+            output += "Fizz"
+        }
+        if (i % 5 === 0){
+            output += "Buzz";
+        }
+        console.log(output || i);
+    }
+}
+fizzBuzz();
 
 /* Opdracht 11 */
 // Schrijf een functie die een array van strings verwacht en een gezamelijke groet teruggeeft, ongeacht hoeveel items er in de array staan.
